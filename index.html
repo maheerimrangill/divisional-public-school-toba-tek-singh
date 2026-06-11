@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DPS Toba Tek Singh | Excellence In Education</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+html{
+scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:rgb(0, 26, 255)50%);
+border-radius:20px;
+}
+
+section{
+padding:100px 8%;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+.gold{
+color:#4e37d4;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#373ad4;
+color:black;
+text-decoration:none;
+font-weight:600;
+border-radius:40px;
+transition:.4s;
+}
+.btn{
+position:relative;
+z-index:10;
+display:inline-block;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px #3747d4;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+z-index:1000;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#4737d4;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#3741d4;
+}
+
+.hero{
+height:100vh;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+overflow:visible;
+padding-bottom:80px;
+}
+
+.hero-content{
+position:relative;
+z-index:10;
+}
+.hero h1{
+font-size:70px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+margin-bottom:30px;
+line-height:1.8;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about-img{
+height:400px;
+background:linear-gradient(135deg,#6137d4,#111);
+border-radius:20px;
+}
+
+.about-text h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.9;
+color:#ccc;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:60px;
+}
+
+.stat-box{
+background:#111;
+padding:40px;
+text-align:center;
+border-radius:20px;
+border:1px solid #222;
+transition:.7s;
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
+border-color:#5937d4;
+}
+
+.stat-box h3{
+font-size:50px;
+color:#7337d4;
+}
+
+.stat-box p{
+margin-top:10px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-title h2{
+font-size:50px;
+color:#6137d4;
+}
+
+.section-title p{
+color:#aaa;
+margin-top:15px;
+}
+
+.programs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:40px;
+border-radius:20px;
+border:1px solid #222;
+transition:.7s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#3a37d4;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#4e37d4;
+}
+
+.card p{
+color:#ccc;
+line-height:1.8;
+}
+
+.facilities{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.facility{
+background:#111;
+padding:35px;
+border-radius:20px;
+transition:.7s;
+border:1px solid #222;
+}
+
+.facility:hover{
+border-color:#5437d4;
+transform:translateY(-8px);
+}
+
+.facility h3{
+margin-bottom:15px;
+color:#3747d4;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.gallery div{
+height:260px;
+background:linear-gradient(135deg,#4e37d4,#222);
+border-radius:20px;
+transition:.7s;
+}
+
+.gallery div:hover{
+transform:scale(1.05);
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.testimonial{
+background:#111;
+padding:35px;
+border-radius:20px;
+border:1px solid #222;
+}
+
+.testimonial h4{
+color:#6137d4;
+margin-top:15px;
+}
+
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:40px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,textarea{
+padding:15px;
+background:#111;
+border:none;
+outline:none;
+border-radius:10px;
+color:white;
+}
+
+textarea{
+height:180px;
+resize:none;
+}
+
+footer{
+background:#000;
+padding:40px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+nav ul{
+display:none;
+}
+
+.section-title h2{
+font-size:35px;
+}
+
+}
+.loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:1s;
+}
+
+.loader h1{
+color:#5937d4;
+font-size:60px;
+font-weight:800;
+letter-spacing:5px;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+opacity:.5;
+}
+
+50%{
+transform:scale(1.1);
+opacity:1;
+}
+
+100%{
+transform:scale(1);
+opacity:.5;
+}
+
+}
+@keyframes heroFade{
+
+from{
+opacity:0;
+transform:translateY(100px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.hero *{
+z-index:2;
+position:relative;
+}
+.hero::before,
+
+
+</style>
+</head>
+
+<body>
+    <div class="loader">
+<h1>DPS TTS</h1>
+</div>
+
+<header>
+<nav>
+
+<div class="logo">
+DPS TTS
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#academics">Academics</a></li>
+<li><a href="#facilities">Facilities</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Divisional Public School
+<span class="gold">Toba Tek Singh</span>
+</h1>
+
+<p>
+Providing quality education, character building,
+leadership development and academic excellence
+for future generations.
+</p>
+
+<a href="#about" class="btn">
+Explore More
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="reveal">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-img"></div>
+
+<div class="about-text">
+
+<h2>
+About <span class="gold">DPS Toba Tek Singh</span>
+</h2>
+
+<p>
+Divisional Public School & College Toba Tek Singh is one of the
+leading educational institutions dedicated to academic excellence,
+character building and leadership development. The school provides
+a modern learning environment where students are encouraged to
+achieve their highest potential in academics, sports and co-curricular activities.
+</p>
+
+<br>
+
+<p>
+Our mission is to develop confident, responsible and creative
+individuals who contribute positively to society and become future leaders.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STATISTICS -->
+
+<section class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Achievements</h2>
+
+<p>Numbers that reflect excellence and dedication.</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3 class="counter" data-target="2500">0</h3>
+<p>Students</p>
+</div>
+
+<div class="stat-box">
+<h3 class="counter" data-target="180">0</h3>
+<p>Qualified Staff</p>
+</div>
+
+<div class="stat-box">
+<h3 class="counter" data-target="98">0</h3>
+<p>Board Result %</p>
+</div>
+
+<div class="stat-box">
+<h3 class="counter" data-target="45">0</h3>
+<p>Years of Excellence</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRINCIPAL MESSAGE -->
+
+<section class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Principal's Message</h2>
+
+<p>A vision for excellence and success.</p>
+
+</div>
+
+<div class="card">
+
+<p>
+At DPS Toba Tek Singh, we believe education extends beyond textbooks.
+Our goal is to nurture young minds with knowledge, confidence,
+discipline and leadership qualities. We strive to create an environment
+where every student can discover their strengths and excel in all areas of life.
+</p>
+
+<br>
+
+<h3>
+— Principal, DPS Toba Tek Singh
+</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACADEMICS -->
+
+<section id="academics" class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Academic Programs</h2>
+
+<p>Comprehensive education for every stage of learning.</p>
+
+</div>
+
+<div class="programs">
+
+<div class="card">
+
+<h3>Pre School</h3>
+
+<p>
+A nurturing environment focused on creativity, communication skills,
+basic literacy and confidence building.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Primary Education</h3>
+
+<p>
+Strong foundations in Mathematics, Science, English,
+Urdu and Islamic Studies with activity-based learning.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Middle School</h3>
+
+<p>
+Developing critical thinking, teamwork and academic skills
+through modern teaching methodologies.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Secondary Education</h3>
+
+<p>
+Preparation for board examinations with a focus on
+academic excellence and practical knowledge.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Higher Secondary</h3>
+
+<p>
+Pre-Medical, Pre-Engineering, ICS, Commerce and Humanities
+programs designed for future success.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Co-Curricular Learning</h3>
+
+<p>
+Debates, science exhibitions, sports competitions,
+leadership activities and student clubs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FACILITIES -->
+
+<section id="facilities" class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>World Class Facilities</h2>
+
+<p>Modern infrastructure supporting quality education.</p>
+
+</div>
+
+<div class="facilities">
+
+<div class="facility">
+<h3>Smart Classrooms</h3>
+<p>
+Digitally equipped classrooms with multimedia learning tools.
+</p>
+</div>
+
+<div class="facility">
+<h3>Science Laboratories</h3>
+<p>
+Advanced Physics, Chemistry and Biology labs for practical learning.
+</p>
+</div>
+
+<div class="facility">
+<h3>Computer Labs</h3>
+<p>
+Modern computer systems with internet access and technology training.
+</p>
+</div>
+
+<div class="facility">
+<h3>Library</h3>
+<p>
+Thousands of books, journals and educational resources.
+</p>
+</div>
+
+<div class="facility">
+<h3>Sports Complex</h3>
+<p>
+Facilities for cricket, football, badminton and athletics.
+</p>
+</div>
+
+<div class="facility">
+<h3>Auditorium</h3>
+<p>
+A spacious venue for seminars, events and annual functions.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery" class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Campus Gallery</h2>
+
+<p>Highlights from our vibrant school life.</p>
+
+</div>
+
+<div class="gallery">
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>What People Say</h2>
+
+<p>Experiences shared by students and parents.</p>
+
+</div>
+
+<div class="testimonials">
+
+<div class="testimonial">
+
+<p>
+"DPS Toba Tek Singh has provided my child with excellent education,
+discipline and confidence. The teachers are highly supportive."
+</p>
+
+<h4>Parent</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+"The learning environment is inspiring and motivates students
+to achieve their goals."
+</p>
+
+<h4>Student</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+"The balance between academics and co-curricular activities
+makes DPS one of the best institutions."
+</p>
+
+<h4>Alumni</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="reveal">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+<p>Get in touch with DPS Toba Tek Singh.</p>
+
+</div>
+
+<div class="contact-box">
+
+<div>
+
+<h3 style="color:#d4af37; margin-bottom:20px;">
+School Information
+</h3>
+
+<p style="line-height:2; color:#ccc;">
+
+📍 Toba Tek Singh, Punjab, Pakistan
+<br><br>
+
+📞 +92 XXX XXXXXXX
+<br><br>
+
+✉ info@dpstts.edu.pk
+<br><br>
+
+🕒 Monday - Saturday
+<br>
+8:00 AM - 2:00 PM
+
+</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button class="btn" type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2 style="color:#d4af37;">
+DPS Toba Tek Singh
+</h2>
+
+<br>
+
+<p>
+Empowering students through excellence in education,
+leadership and innovation.
+</p>
+
+<br>
+
+<p style="color:#777;">
+© 2026 DPS Toba Tek Singh. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+    window.addEventListener('load', ()=>{
+
+setTimeout(()=>{
+
+document.querySelector('.loader').style.opacity='0';
+
+setTimeout(()=>{
+
+document.querySelector('.loader').style.display='none';
+
+},1000);
+
+},1500);
+
+});
+
+/* SCROLL ANIMATION */
+
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+
+reveals.forEach(reveal => {
+
+let windowHeight = window.innerHeight;
+let revealTop = reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add('active');
+
+}
+
+});
+
+});
+
+
+/* COUNTER ANIMATION */
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+
+const count = +counter.innerText;
+
+const increment = target / 100;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + increment);
+
+setTimeout(updateCounter, 20);
+
+}
+else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
+});
+
+
+/* NAVBAR SHADOW */
+
+window.addEventListener('scroll', function(){
+
+const header = document.querySelector('header');
+
+header.style.boxShadow =
+window.scrollY > 50
+? '0 5px 25px rgba(212,175,55,.2)'
+: 'none';
+
+});
+
+
+/* CONTACT FORM */
+
+document.querySelector('form')
+.addEventListener('submit', function(e){
+
+e.preventDefault();
+
+alert(
+'Thank you! Your message has been submitted successfully.'
+);
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
